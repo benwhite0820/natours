@@ -15,7 +15,9 @@ const Header = () => {
             <Heading textLevel="main">Outdoors</Heading>
             <Heading textLevel="sub">is where life happens</Heading>
           </h1>
-          <Button>Discover our tours</Button>
+          <Button buttonColor="white" className="btn--animation">
+            Discover our tours
+          </Button>
         </div>
       </header>
     </>

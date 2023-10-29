@@ -30,10 +30,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-}
 
-.btn--animated {
-  animation: moveInButton 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards;
+    .btn--animated {
+      animation: moveInButton 0.5s ease-out 0.75s;
+      animation-fill-mode: backwards;
+    }
+  }
 }
