@@ -1,7 +1,12 @@
-@import '../../assets/scss/abstracts/variables';
+@import '@/assets/scss/abstracts/variables';
+@import '../../assets/scss/abstracts/mixin';
 
 .section-about {
   background-color: $color-grey-light-1;
   padding: 25rem 0;
   margin-top: -20vh;
+
+  .paragraph {
+    @include paragraph;
+  }
 }

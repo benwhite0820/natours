@@ -1,7 +1,17 @@
+@import '../abstracts/variables';
+
 @mixin clearfix {
   &::after {
     content: '';
     display: table;
     clear: both;
+  }
+}
+
+@mixin paragraph {
+  font-size: $default-font-size;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
   }
 }
