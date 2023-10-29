@@ -1,16 +1,17 @@
-import './primaryHeading.style.scss';
+import './heading.style.scss';
 import React from 'react';
 
 type Props = {
   children: React.ReactNode;
-  textLevel: 'main' | 'sub';
+  textLevel: 'main' | 'sub' | 'sec';
   className?: string;
 };
 
-const PrimaryHeading = ({ children, textLevel, className = '' }: Props) => {
+const Heading = ({ children, textLevel, className = '' }: Props) => {
   const headingStyle = {
     main: 'heading-primary--main',
     sub: 'heading-primary--sub',
+    sec: 'heading-secondary',
   };
   return (
     <span className={`${headingStyle[textLevel]} ${className}`}>
@@ -19,4 +20,4 @@ const PrimaryHeading = ({ children, textLevel, className = '' }: Props) => {
   );
 };
 
-export default PrimaryHeading;
+export default Heading;
