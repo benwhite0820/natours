@@ -1,0 +1,15 @@
+@import '../../assets/scss/abstracts/variables';
+
+.section-tours {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem;
+
+  .card__side--front-1 {
+    background-image: linear-gradient(
+      to right bottom,
+      $color-secondary-light,
+      $color-secondary-dark
+    );
+  }
+}
