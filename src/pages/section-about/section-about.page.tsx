@@ -3,6 +3,7 @@ import '@assets/scss/base/_utilties.scss';
 import './section-about.style.scss';
 import Grid from '@components/grid/grid.component';
 import Link from '@components/link/link.component';
+import Composition from '@components/composition/composition.component';
 
 const SectionAbout = () => {
   return (
@@ -30,7 +31,9 @@ const SectionAbout = () => {
 
           <Link>Learn More &rarr;</Link>
         </Grid>
-        <Grid colClassName="col-1-of-2">Imge compoisition</Grid>
+        <Grid colClassName="col-1-of-2">
+          <Composition />
+        </Grid>
       </Grid>
     </section>
   );
