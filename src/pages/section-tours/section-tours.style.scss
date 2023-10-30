@@ -5,11 +5,44 @@
   padding: 25rem 0 50rem 0;
   margin-top: -10rem;
 
-  .card__side--front-1 {
+  .card__side--back-1 {
     background-image: linear-gradient(
       to right bottom,
       $color-secondary-light,
       $color-secondary-dark
+    );
+  }
+
+  .card__side--back-2 {
+    background-image: linear-gradient(
+      to right bottom,
+      $color-primary-light,
+      $color-primary-dark
+    );
+  }
+
+  .card__side--back-3 {
+    background-image: linear-gradient(
+      to right bottom,
+      $color-tertiary-light,
+      $color-tertiary-dark
+    );
+  }
+
+  .card__picture--1 {
+    background-image: linear-gradient(
+        to right bottom,
+        $color-secondary-light,
+        $color-secondary-dark
+      ),
+      url('../../assets/images/nat-5.jpg');
+  }
+
+  .card__heading-span--1 {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-secondary-light, 0.85),
+      rgba($color-secondary-dark, 0.85)
     );
   }
 }
