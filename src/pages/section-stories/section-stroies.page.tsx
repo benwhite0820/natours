@@ -6,6 +6,7 @@ import Grid from '@components/grid/grid.component';
 import Heading from '@components/heading/heading.component';
 import StoryCard from '@components/story-card/store-card.component';
 import Link from '@components/link/link.component';
+import BackgroundVideo from '@components/background-video/background-video.component';
 
 const SectionStories = () => {
   const card = [
@@ -33,6 +34,7 @@ const SectionStories = () => {
 
   return (
     <section className="section-stories">
+      <BackgroundVideo />
       <div className="u-center-text u-margin-bottom-big">
         <Heading textLevel="sec">We make people genuinely happy</Heading>
       </div>
