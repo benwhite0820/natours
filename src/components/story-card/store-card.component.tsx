@@ -8,13 +8,15 @@ type Props = {
   imageDesc: string;
   title: string;
   paragraph: string;
+  name: string;
 };
 
-const StoryCard = ({ image, imageDesc, title, paragraph }: Props) => {
+const StoryCard = ({ image, imageDesc, title, paragraph, name }: Props) => {
   return (
     <div className="story">
       <figure className="story__shape">
         <img src={image} alt={imageDesc} className="story__image" />
+        <figcaption className="story__caption">{name}</figcaption>
       </figure>
       <div className="story__text">
         <Heading textLevel="ter" className="u-margin-bottom-small">
