@@ -13,13 +13,8 @@
     font-size: $default-font-size;
   }
 
-  &:active {
-    transform: translateY(-0.1rem);
-    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
-  }
-
   &:hover {
-    transform: translateY(0.3rem);
+    transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
     &::after {
@@ -28,13 +23,9 @@
     }
   }
 
-  &--white {
-    background-color: $color-white;
-    color: $color-grey-dark;
-
-    &::after {
-      background-color: $color-white;
-    }
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
 
   &::after {
@@ -48,5 +39,24 @@
     left: 0;
     z-index: -1;
     transition: all 0.4s;
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+    transition: all 1s;
+
+    &::after {
+      background-color: $color-primary;
+    }
   }
 }

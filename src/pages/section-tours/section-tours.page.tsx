@@ -3,6 +3,7 @@ import './section-tours.style.scss';
 import '@assets/scss/abstracts/_variables.scss';
 import Grid from '@components/grid/grid.component';
 import Heading from '@components/heading/heading.component';
+import Button from '@components/button/button.component';
 
 const SectionTours = () => {
   const dataObject = {
@@ -66,6 +67,9 @@ const SectionTours = () => {
           />
         </Grid>
       </Grid>
+      <div className="u-center-text u-margin-top-huge">
+        <Button buttonColor="green">Discover all tours</Button>
+      </div>
     </section>
   );
 };

@@ -4,12 +4,13 @@ import React from 'react';
 type Props = {
   children: React.ReactNode;
   className?: string;
-  buttonColor: 'white';
+  buttonColor: 'white' | 'green';
 };
 
 const Button = ({ children, className = '', buttonColor }: Props) => {
   const buttonColorClassName = {
     white: 'btn--white',
+    green: 'btn--green',
   };
 
   return (
