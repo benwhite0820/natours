@@ -1,3 +1,4 @@
+import Button from '@components/button/button.component';
 import './card.style.scss';
 
 type Props = {
@@ -6,6 +7,7 @@ type Props = {
   cardTitleClassName?: string;
   cardTitle?: string;
   detailsArray?: string[];
+  value?: number;
 };
 
 const Card = ({
@@ -14,6 +16,7 @@ const Card = ({
   cardTitleClassName = '',
   cardTitle,
   detailsArray,
+  value,
 }: Props) => {
   return (
     <div className="card">
@@ -37,7 +40,15 @@ const Card = ({
         </div>
       </div>
 
-      <div className={`card__side card__side--back ${backClassName}`}>Back</div>
+      <div className={`card__side card__side--back ${backClassName}`}>
+        <div className="card__cta">
+          <div className="card__price-box">
+            <p className="card__price-only">Only</p>
+            <p className="card__price-value">${value}</p>
+          </div>
+          <Button buttonColor="white">Book now!</Button>
+        </div>
+      </div>
     </div>
   );
 };

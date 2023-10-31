@@ -13,6 +13,20 @@ const SectionTours = () => {
       'Sleep in cozy hotels',
       'Difficulty: ease',
     ],
+    card2: [
+      '7 day tours',
+      'Up to 40 people',
+      '6 tour guides',
+      'Sleep in provided tents',
+      'Difficulty: medium',
+    ],
+    card3: [
+      '5 day tours',
+      'Up to 15 people',
+      '3 tour guides',
+      'Sleep in provided tents',
+      'Difficulty: hard',
+    ],
   };
 
   return (
@@ -28,18 +42,27 @@ const SectionTours = () => {
             cardTitleClassName="card__heading-span--1"
             cardTitle="The Sea Explorer"
             detailsArray={dataObject.card1}
+            value={297}
           />
         </Grid>
         <Grid colClassName="col-1-of-3">
           <Card
             backClassName="card__side--back-2"
-            cardTitle="The Sea Explorer"
+            imageClassName="card__picture--2"
+            cardTitleClassName="card__heading-span--2"
+            cardTitle="The Forest Hiker"
+            detailsArray={dataObject.card2}
+            value={497}
           />
         </Grid>
         <Grid colClassName="col-1-of-3">
           <Card
             backClassName="card__side--back-3"
-            cardTitle="The Sea Explorer"
+            imageClassName="card__picture--3"
+            cardTitleClassName="card__heading-span--3"
+            cardTitle="The Snow Adventurer"
+            detailsArray={dataObject.card3}
+            value={897}
           />
         </Grid>
       </Grid>
