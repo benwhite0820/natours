@@ -1,8 +1,8 @@
+import FormGroup from '@components/form-group/form-group.component';
 import './input-label.style.scss';
 
 type Props = {
   type?: string;
-  className?: string;
   placeholder?: string;
   id?: string;
   required?: boolean;
@@ -11,14 +11,13 @@ type Props = {
 
 const InputLabel = ({
   type = 'text',
-  className,
   placeholder,
   id,
   required = false,
   label,
 }: Props) => {
   return (
-    <div className={`form__group ${className}`}>
+    <FormGroup>
       <input
         type={type}
         className="form__input"
@@ -29,7 +28,7 @@ const InputLabel = ({
       <label htmlFor={id} className="form__label">
         {label}
       </label>
-    </div>
+    </FormGroup>
   );
 };
 
