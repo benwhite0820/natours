@@ -3,6 +3,9 @@ import './section-book.style.scss';
 import '@assets/scss/base/_utilties.scss';
 import Grid from '@components/grid/grid.component';
 import InputLabel from '@components/input-label/input-label.component';
+import FormGroup from '@components/form-group/form-group.component';
+import RadioButton from '@components/radio-button/radio-button.component';
+import Button from '@components/button/button.component';
 
 const SectionBook = () => {
   return (
@@ -26,6 +29,23 @@ const SectionBook = () => {
                 required
                 label="Email address"
               />
+
+              <FormGroup className="u-margin-bottom-medium">
+                <RadioButton
+                  htmlForAndId="small"
+                  name="size"
+                  label="Small tour group"
+                />
+                <RadioButton
+                  htmlForAndId="large"
+                  name="size"
+                  label="Large tour group"
+                />
+              </FormGroup>
+
+              <FormGroup>
+                <Button buttonColor="green">Next step &rarr;</Button>
+              </FormGroup>
             </form>
           </div>
         </div>
