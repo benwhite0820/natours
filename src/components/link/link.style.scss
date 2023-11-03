@@ -24,3 +24,22 @@
     transform: translateY(0);
   }
 }
+
+.footer_link {
+  &:link,
+  &:visited {
+    color: $color-grey-light-1;
+    background-color: $color-grey-dark-3;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.2s;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-primary;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+    transform: scale(1.3) rotate(5deg);
+  }
+}

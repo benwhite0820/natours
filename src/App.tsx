@@ -5,6 +5,7 @@ import SectionAbout from './pages/section-about/section-about.page';
 import SectionTours from '@pages/section-tours/section-tours.page';
 import SectionStories from '@pages/section-stories/section-stroies.page';
 import SectionBook from '@pages/section-book/section-book.component';
+import Footer from '@pages/footer/footer.page';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <SectionStories />
         <SectionBook />
       </main>
+      <Footer />
     </>
   );
 }
