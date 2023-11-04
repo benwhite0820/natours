@@ -10,10 +10,10 @@ const Navigation = () => {
       />
 
       <label htmlFor="navi-toggle" className="navigation__button">
-        <span className="navigation__icon">&nbsp;</span>
+        <span className="navigation__icon" />
       </label>
 
-      <div className="navigation__background">&nbsp;</div>
+      <div className="navigation__background" />
 
       <nav className="navigation__nav">
         <ul className="navigation__list">
