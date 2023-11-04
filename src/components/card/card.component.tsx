@@ -46,7 +46,9 @@ const Card = ({
             <p className="card__price-only">Only</p>
             <p className="card__price-value">${value}</p>
           </div>
-          <Button buttonColor="white">Book now!</Button>
+          <Button buttonColor="white" navigationTag="popup">
+            Book now!
+          </Button>
         </div>
       </div>
     </div>

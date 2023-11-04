@@ -15,7 +15,11 @@ const Header = () => {
             <Heading textLevel="main">Outdoors</Heading>
             <Heading textLevel="sub">is where life happens</Heading>
           </h1>
-          <Button buttonColor="white" className="btn--animation">
+          <Button
+            buttonColor="white"
+            className="btn--animation"
+            navigationTag="section-tours"
+          >
             Discover our tours
           </Button>
         </div>

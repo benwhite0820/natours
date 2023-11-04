@@ -31,7 +31,7 @@ const SectionTours = () => {
   };
 
   return (
-    <section className="section-tours">
+    <section className="section-tours" id="section-tours">
       <div className="u-center-text u-margin-bottom-big">
         <Heading textLevel="sec">Most popular tours</Heading>
       </div>

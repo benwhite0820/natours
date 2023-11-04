@@ -8,13 +8,14 @@ import Heading from '@components/heading/heading.component';
 const PopupCard = () => {
   return (
     <div className="popup" id="popup">
+      <p className="test">test</p>
       <div className="popup__content">
         <div className="popup__left">
           <img src={Img1} alt="Tour photo" className="popup__img" />
           <img src={Img2} alt="Tour photo" className="popup__img" />
         </div>
         <div className="popup__right">
-          <a href="#section-tours" className="popup__close">
+          <a href="#" className="popup__close">
             &times;
           </a>
 
