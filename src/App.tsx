@@ -6,10 +6,12 @@ import SectionTours from '@pages/section-tours/section-tours.page';
 import SectionStories from '@pages/section-stories/section-stroies.page';
 import SectionBook from '@pages/section-book/section-book.component';
 import Footer from '@pages/footer/footer.page';
+import Navigation from '@components/navigation/navigation.component';
 
 function App() {
   return (
     <>
+      <Navigation />
       <Header />
       <main>
         <SectionAbout />
