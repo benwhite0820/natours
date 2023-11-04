@@ -7,6 +7,7 @@ import SectionStories from '@pages/section-stories/section-stroies.page';
 import SectionBook from '@pages/section-book/section-book.component';
 import Footer from '@pages/footer/footer.page';
 import Navigation from '@components/navigation/navigation.component';
+import PopupCard from '@components/popup-card/popup-card.component';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <SectionBook />
       </main>
       <Footer />
+      <PopupCard />
     </>
   );
 }
