@@ -40,7 +40,7 @@ const SectionStories = () => {
       </div>
 
       {card.map(({ image, imageDesc, title, paragraph, name }) => (
-        <Grid row>
+        <Grid row key={title}>
           <StoryCard
             key={name}
             image={image}
