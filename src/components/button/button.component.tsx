@@ -5,9 +5,15 @@ type Props = {
   children: React.ReactNode;
   className?: string;
   buttonColor: 'white' | 'green';
+  navigationTag?: string;
 };
 
-const Button = ({ children, className = '', buttonColor }: Props) => {
+const Button = ({
+  children,
+  className = '',
+  buttonColor,
+  navigationTag = '',
+}: Props) => {
   const buttonColorClassName = {
     white: 'btn--white',
     green: 'btn--green',
@@ -15,7 +21,7 @@ const Button = ({ children, className = '', buttonColor }: Props) => {
 
   return (
     <a
-      href="#"
+      href={`#${navigationTag}`}
       className={`btn ${buttonColorClassName[buttonColor]} ${className}`}
     >
       {children}
