@@ -1,7 +1,6 @@
 import Heading from '@components/heading/heading.component';
 import './store-card.style.scss';
 import '@assets/scss/base/_utilties.scss';
-import React from 'react';
 
 type Props = {
   image: string;

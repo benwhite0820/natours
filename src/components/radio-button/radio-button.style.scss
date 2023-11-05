@@ -1,8 +1,14 @@
 @import '../../assets/scss/abstracts/variables';
+@import '../../assets/scss/abstracts/mixin';
 
 .form__radio-group {
   width: 49%;
   display: inline-block;
+
+  @include respond(tab-port) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 
 .form__radio-label {
