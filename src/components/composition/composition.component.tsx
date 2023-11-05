@@ -19,7 +19,7 @@ const ResponsiveImage = ({
 }) => (
   <img
     srcSet={`${smallImage} 300w, ${largeImage} 1000w`}
-    sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+    sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
     alt={alt}
     className={`composition__photo composition__photo--p${currentImage}`}
   />
