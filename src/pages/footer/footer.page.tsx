@@ -1,4 +1,7 @@
-import FooterLogo from '@assets/images/logo-green-2x.png';
+import FooterLogoHQ from '@assets/images/logo-green-2x.png';
+import FooterLogoLQ from '@assets/images/logo-green-1x.png';
+import FooterLogoSmallHQ from '@assets/images/logo-green-small-2x.png';
+import FooterLogoSmallLQ from '@assets/images/logo-green-small-1x.png';
 import Grid from '@components/grid/grid.component';
 import './footer.style.scss';
 import Link from '@components/link/link.component';
@@ -7,7 +10,16 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__logo-box">
-        <img src={FooterLogo} alt="Full logo" className="footer__logo" />
+        <picture className="footer__logo">
+          <source
+            srcSet={`${FooterLogoSmallHQ} 2x, ${FooterLogoSmallLQ} 1x`}
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcSet={`${FooterLogoHQ} 2x, ${FooterLogoLQ} 1x`}
+            alt="Full logo"
+          />
+        </picture>
       </div>
       <Grid row>
         <Grid colClassName="col-1-of-2">
