@@ -16,7 +16,6 @@
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
   position: relative;
 
-  // 可以透過 min-resolution: 192dpi 和 -webkit-min-device-pixel-ratio: 2 來定義 retina 顯示器
   @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
     background-image: linear-gradient(
         to right bottom,
