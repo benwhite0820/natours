@@ -1,4 +1,5 @@
 @import '../../assets/scss/abstracts/variables';
+@import '../../assets/scss/abstracts/mixin';
 
 .section-book {
   padding: 15rem 0;
@@ -7,6 +8,10 @@
     $color-primary-light,
     $color-primary-dark
   );
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .book {

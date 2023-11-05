@@ -1,4 +1,10 @@
+@import '../../assets/scss/abstracts/mixin';
+
 .section-stories {
   padding: 15rem 0;
   position: relative;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
