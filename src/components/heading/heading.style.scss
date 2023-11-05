@@ -1,4 +1,5 @@
 @import '../../assets/scss/abstracts/variables';
+@import '../../assets/scss/abstracts/mixin';
 
 .heading-primary {
   color: $color-white;
@@ -15,6 +16,11 @@
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-family: 5rem;
+    }
   }
 
   &--sub {
@@ -26,6 +32,10 @@
     animation-name: moveInRight;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
@@ -44,6 +54,14 @@
   color: transparent;
   letter-spacing: 0.2rem;
   transition: all 0.2s;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
